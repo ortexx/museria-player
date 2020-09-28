@@ -1,6 +1,6 @@
 {
   "name": "museria-player",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Global decentralized music player",
   "main": "./src/index.js",
   "author": {
@@ -12,6 +12,7 @@
     "start": "node index.js",
     "face": "node index.js --face=true",
     "local": "node index.js --hostname=localhost --initialNetworkAddress=localhost:2790 --port=2790",
+    "husky": "npm i -D --no-package-lock husky",
     "mm-install-deps": "cross-env-shell \"cd ./node_modules/musiphone; npm i && npm r husky\"",
     "mm-install-plugins": "cross-env-shell \"cd ./node_modules/musiphone; npm run cordova-init\"",
     "mm-install": "npm run mm-install-deps && npm run mm-install-plugins",
@@ -22,7 +23,6 @@
     "mm-copy-apk-debug": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.debug.apk",
     "mm-copy-apk-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.release.apk",
     "mm-copy-apk": "npm run mm-copy-apk-debug && npm run mm-copy-apk-release",
-    "husky": "npm i -D --no-package-lock husky",
     "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy-apk && npm run husky"
   },
   "husky": {
@@ -48,8 +48,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "museria-global": "^0.1.10",
-    "musiphone": "^0.1.3",
+    "museria-global": "^0.1.13",
+    "musiphone": "^0.1.5",
     "spreadable": "^0.1.24"
   },
   "devDependencies": {
