@@ -12,7 +12,7 @@
     "start": "node index.js",
     "face": "node index.js --face=true",
     "local": "node index.js --hostname=localhost --initialNetworkAddress=localhost:2790 --port=2790",
-    "mm-install-deps": "cross-env-shell \"cd ./node_modules/musiphone; npm i\"",
+    "mm-install-deps": "cross-env-shell \"cd ./node_modules/musiphone; npm i && npm r husky\"",
     "mm-install-plugins": "cross-env-shell \"cd ./node_modules/musiphone; npm run cordova-init\"",
     "mm-install": "npm run mm-install-deps && npm run mm-install-plugins",
     "mm-build-mobile": "cross-env-shell MUSIPHONE_API_ADDRESS=../../faces.json \"cd ./node_modules/musiphone; npm run build-mobile-prod\"",
@@ -22,7 +22,8 @@
     "mm-copy-apk-debug": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.debug.apk",
     "mm-copy-apk-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.release.apk",
     "mm-copy-apk": "npm run mm-copy-apk-debug && npm run mm-copy-apk-release",
-    "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy-apk"
+    "husky": "npm i -D --no-package-lock husky",
+    "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy-apk && npm run husky"
   },
   "husky": {
     "hooks": {
