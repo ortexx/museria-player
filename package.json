@@ -1,6 +1,6 @@
 {
   "name": "museria-player",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Global decentralized music player",
   "main": "./src/index.js",
   "author": {
@@ -38,6 +38,7 @@
     "audio",
     "meta",
     "data",
+    "museria",
     "storage",
     "network",
     "distributed",
@@ -48,9 +49,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "museria-global": "^0.1.13",
-    "musiphone": "^0.1.7",
-    "spreadable": "^0.1.24"
+    "museria-global": "~0.2.0",
+    "musiphone": "~0.2.0",
+    "spreadable": "~0.2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
