@@ -50,7 +50,7 @@
   "license": "MIT",
   "dependencies": {
     "museria-global": "~0.2.0",
-    "musiphone": "~0.2.0",
+    "musiphone": "~0.2.1",
     "spreadable": "~0.2.0"
   },
   "devDependencies": {
