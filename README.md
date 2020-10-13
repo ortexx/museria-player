@@ -24,7 +24,7 @@ You can also pass environment variables before the command.
 Look at [the musiphone requirements](https://github.com/ortexx/musiphone/#what-are-the-requirements).
 
 ## What is the idea
-We have [a global music storage](https://github.com/ortexx/museria-global/). But why do you need it in the first place? Of course, to store and listen to music. This player allows you to create playlists with storage songs, share links to them and listen to music in a convenient player. Just visit [player.museria.com](http://player.museria.com) to see how it works. Or install android application to you phone from [musiphone.debug.apk](https://github.com/ortexx/museria-player/blob/master/musiphone.debug.apk)
+We have [a global music storage](https://github.com/ortexx/museria-global/). But why do you need it in the first place? Of course, to store and listen to music. This player allows you to create playlists with storage songs, share links to them and listen to music in a convenient player. Just visit [player.museria.com](http://player.museria.com) to see how it works. Or install the android application to you phone from [musiphone.debug.apk](https://github.com/ortexx/museria-player/blob/master/musiphone.debug.apk)
 
 ## How it works
 At the very beginning, please check out [the musiphone library](https://github.com/ortexx/musiphone/).
