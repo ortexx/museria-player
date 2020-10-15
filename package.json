@@ -49,9 +49,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "museria-global": "~0.2.3",
-    "musiphone": "~0.2.5",
-    "spreadable": "~0.2.5"
+    "museria-global": "^0.2.8",
+    "musiphone": "^0.2.6",
+    "spreadable": "^0.2.9"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
