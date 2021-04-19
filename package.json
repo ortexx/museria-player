@@ -21,7 +21,7 @@
     "mm-release-mobile-release": "cross-env-shell \"cd ./node_modules/musiphone; npm run release-mobile-prod\"",
     "mm-release-mobile": "npm run mm-release-mobile-debug && npm run mm-release-mobile-release",
     "mm-copy-apk-debug": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.debug.apk",
-    "mm-copy-apk-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.release.apk",
+    "mm-copy-apk-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.release.apk ./musiphone.release.apk",
     "mm-copy-apk": "npm run mm-copy-apk-debug && npm run mm-copy-apk-release",
     "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy-apk && npm run husky"
   },
