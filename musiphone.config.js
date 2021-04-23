@@ -30,5 +30,5 @@ module.exports = {
   },
   storage: {
     path: argv.storagePath || process.env.MUSIPHONE_STORAGE_PATH
-  },  
+  }  
 }
