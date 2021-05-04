@@ -1,6 +1,6 @@
 {
   "name": "museria-player",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "description": "Global decentralized music player",
   "main": "./src/index.js",
   "author": {
