@@ -20,4 +20,4 @@ services:
     ports:
       - $MUSIPHONE_DOCKER_PORT:$MUSIPHONE_PORT
     volumes:
-      - ./musiphone:/usr/src/app/musiphone
+      - $MUSIPHONE_STORAGE_PATH:/usr/src/app/musiphone
