@@ -1,6 +1,6 @@
 {
   "name": "museria-player",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "description": "Global decentralized music player",
   "main": "./src/index.js",
   "author": {
@@ -20,10 +20,10 @@
     "mm-release-mobile-debug": "cross-env-shell \"cd ./node_modules/musiphone; npm run release-mobile\"",
     "mm-release-mobile-release": "cross-env-shell \"cd ./node_modules/musiphone; npm run release-mobile-prod\"",
     "mm-release-mobile": "npm run mm-release-mobile-debug && npm run mm-release-mobile-release",
-    "mm-copy-apk-debug": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.debug.apk",
-    "mm-copy-apk-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.release.apk ./musiphone.release.apk",
-    "mm-copy-apk": "npm run mm-copy-apk-debug && npm run mm-copy-apk-release",
-    "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy-apk && npm run husky"
+    "mm-copy-debug": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.debug.apk ./musiphone.debug.apk",
+    "mm-copy-release": "cross-env-shell cp ./node_modules/musiphone/dist/android/musiphone.release.aab ./musiphone.release.aab",
+    "mm-copy": "npm run mm-copy-debug && npm run mm-copy-release",
+    "make-mobile": "npm run mm-install && npm run mm-build-mobile && npm run mm-release-mobile && npm run mm-copy && npm run husky"
   },
   "husky": {
     "hooks": {
@@ -49,9 +49,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "museria-global": "^0.2.25",
-    "musiphone": "^0.2.20",
-    "spreadable": "^0.2.15"
+    "museria-global": "^0.2.30",
+    "musiphone": "^0.2.21",
+    "spreadable": "^0.2.16"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -64,6 +64,6 @@
     "url": "https://github.com/ortexx/museria-player"
   },
   "engines": {
-    "node": ">=10.12.0"
+    "node": ">=10.13.0"
   }
 }
