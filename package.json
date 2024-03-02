@@ -1,8 +1,9 @@
 {
   "name": "museria-player",
-  "version": "0.2.32",
+  "version": "0.3.1",
   "description": "Global decentralized music player",
   "main": "./src/index.js",
+  "type": "module",
   "author": {
     "name": "Alexander Balasyan",
     "email": "mywebstreet@gmail.com"
@@ -49,21 +50,21 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "museria-global": "^0.2.45",
-    "musiphone": "^0.2.33",
-    "spreadable": "^0.2.28"
+    "museria-global": "~0.3.3",
+    "musiphone": "~0.3.4",
+    "spreadable": "~0.3.10"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "husky": "^4.3.8",
-    "yargs": "^16.2.0"
+    "yargs": "^17.2.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ortexx/museria-player"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=20.0.0"
   }
 }

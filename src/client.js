@@ -1,5 +1,7 @@
-const Client = require('musiphone/src/client')();
+import client from 'musiphone/src/client.js';
 
-module.exports = (Parent) => {
+const Client = client();
+
+export default (Parent) => {
   return class ClientMuseriaPlayer extends (Parent || Client) {}
 };

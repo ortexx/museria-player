@@ -1,1 +1,2 @@
-module.exports = Object.assign({}, require('musiphone/src/utils'));
+import utils from 'musiphone/src/utils.js';
+export default Object.assign({}, utils);

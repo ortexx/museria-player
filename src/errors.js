@@ -1,1 +1,2 @@
-module.exports = Object.assign({}, require('musiphone/src/errors'));
+import errors from 'musiphone/src/errors.js';
+export default Object.assign({}, errors);
